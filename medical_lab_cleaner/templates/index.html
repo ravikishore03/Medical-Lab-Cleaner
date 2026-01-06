@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Lab Data Cleaning Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Lab Data Cleaning Tool</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+
+            <!-- Accessible label -->
+            <label for="labfile">Upload Lab Results CSV</label>
+
+            <input
+                type="file"
+                id="labfile"
+                name="file"
+                accept=".csv"
+                required
+            >
+
+            <br><br>
+            <button type="submit">Upload & Clean</button>
+
+        </form>
+    </div>
+</body>
+</html>
